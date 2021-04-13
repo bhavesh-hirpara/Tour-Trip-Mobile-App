@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewClickHandler"
+            type="com.tripkipedia.ui.reviews.viewmodel.ReviewsViewModel.ViewClickHandler" />
+
+        <variable
+            name="viewModel"
+            type="com.tripkipedia.ui.reviews.viewmodel.ReviewsViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/review_header" />
+        <include
+            android:id="@+id/topbar"
+            layout="@layout/topbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.tripkipedia.custom.CBTextView
+                    style="@style/txt_fff_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@mipmap/review_btn_filled"
+                    android:gravity="center"
+                    android:text="All"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@mipmap/review_btn_white_filled"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.tripkipedia.custom.CBTextView
+                        style="@style/txt_purple_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="With Photos"
+                        android:textStyle="bold" />
+
+                    <com.tripkipedia.custom.CBTextView
+                        style="@style/txt_purple_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:alpha="0.5"
+                        android:text="23"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@mipmap/review_btn_white_filled"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.tripkipedia.custom.CBTextView
+                        style="@style/txt_purple_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No Photos"
+                        android:textStyle="bold" />
+
+                    <com.tripkipedia.custom.CBTextView
+                        style="@style/txt_purple_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:alpha="0.5"
+                        android:text="11"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvReviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_80sdp"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                tools:listitem="@layout/item_reviews" />
+        </LinearLayout>
+
+
+        <com.github.captain_miao.optroundcardview.OptRoundCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:optRoundCardLeftBottomCorner="false"
+            app:optRoundCardRightBottomCorner="false"
+            app:optRoundCardTopEdges="false"
+            app:optRoundCardBackgroundColor="@color/white"
+            app:optRoundCardCornerRadius="@dimen/_25sdp"
+            app:optRoundCardElevation="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.tripkipedia.custom.CMTextView
+                        style="@style/txt_dark_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:text="Earn up to:"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:src="@mipmap/review_coins" />
+
+                    <com.tripkipedia.custom.CMTextView
+                        style="@style/txt_yellow_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.8"
+                        android:text="+30"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <com.tripkipedia.custom.CBButtonView
+                    android:id="@+id/btnNext"
+                    style="@style/txt_fff_18"
+                    android:onClick="@{(v) ->viewClickHandler.onLeaveAReviewClick(v)}"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@mipmap/btn_next_filled"
+                    android:text="Leave a Review"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </com.github.captain_miao.optroundcardview.OptRoundCardView>
+    </FrameLayout>
+
+
+</layout>

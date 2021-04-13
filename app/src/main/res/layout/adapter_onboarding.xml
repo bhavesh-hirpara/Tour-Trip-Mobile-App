@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="addData"
+            type="com.tripkipedia.ui.onboarding.datamodel.MenuItem" />
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/lyMainBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp40"
+        android:paddingBottom="50dp"
+        android:weightSum="1">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center"
+            android:id="@+id/imgMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="554dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dp20"
+        android:paddingEnd="@dimen/dp20"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.tripkipedia.custom.CBTextView
+            android:id="@+id/tvCollect"
+            style="@style/txt_fff_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.tripkipedia.custom.CTextView
+            android:id="@+id/tvTitle"
+            style="@style/txt_fff_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_60" />
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</layout>

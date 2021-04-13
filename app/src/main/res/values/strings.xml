@@ -1,0 +1,827 @@
+<resources>
+    <string name="app_name">Tripkipedia</string>
+
+
+    <!--<string name="google_maps_key">AIzaSyC35co0OuaS1ENpIJquOzma2teiCp25XIQ</string>-->
+    <string name="facebook_app_id" translatable="false">526471011214068</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb526471011214068</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="dots">Dots</string>
+    <string name="connection_title">No Internet connection</string>
+    <string name="connection_not_available">It seems that you are not connected to the Internet. Kindly check your network settings.</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_ok">OK</string>
+    <string name="ask_permission_msg">Some permissions are required to do the task.</string>
+    <string name="need_permission_title">Need permission(s)</string>
+    <string name="err_need_permission_msg">You have previously declined this permission.\nYou must approve this permission in \"Permissions\" in the app settings on your device.</string>
+<string name="notifications">Notifications</string>
+    <string name="err_firstname">Enter First Name</string>
+    <string name="err_firstname_short">First Name is too short</string>
+    <string name="err_firstname_invalid">Enter valid first name</string>
+    <string name="err_first_name_length">Maximum 15 Character of First Name</string>
+    <string name="err_lastname">Enter Last Name</string>
+    <string name="err_lastname_invalid">Enter valid last name</string>
+    <string name="err_lastname_short">Last Name is too short</string>
+
+
+    <string name="err_last_name_length">Maximum 15 Character of Last Name</string>
+    <string name="err_credential_empty">Email and password both empty</string>
+    <string name="err_email">Enter email address</string>
+    <string name="err_email_invalid">Invalid email address</string>
+    <string name="err_password">Enter password</string>
+    <string name="err_new_password">Enter New password</string>
+    <string name="err_code">Enter code</string>
+    <string name="err_password_">Old password and new password can\'t be same</string>
+    <string name="err_character_password">Enter At List One Special Character </string>
+    <string name="err_valid_password">Enter At List One Letter, One Number And One Special Character Password</string>
+
+    <string name="err_password_match">New password and confirm password should match.</string>
+    <string name="err_venue_name">Enter Venue Name</string>
+    <string name="err_company_name">Enter Company Name</string>
+    <string name="err_company_type">Enter Company Type</string>
+    <string name="err_address">Enter Address</string>
+    <string name="err_state">Select State</string>
+    <string name="err_city">Select City</string>
+    <string name="err_zipcode">Enter Zipcode</string>
+    <string name="err_capacity">Select Capacity</string>
+    <string name="err_hour_operation">Enter Hours of Operation</string>
+    <string name="err_phone_number">Enter Mobile Number</string>
+    <string name="err_select_venue">Select Venue</string>
+    <string name="err_name">Enter Name</string>
+    <string name="err_start_Date_time">Enter Star Date &amp; Time</string>
+    <string name="err_end_Date_time">Enter End Date &amp; Time</string>
+    <string name="err_available_ticket">Enter Available Ticket</string>
+    <string name="err_rate">Enter Rate</string>
+    <string name="err_description">Enter Description</string>
+    <string name="err_select_image">Select Image</string>
+
+    <string name="failed">Failed</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_clarity">Clarity</string>
+    <string name="hint_cut">Cut</string>
+    <string name="hint_polish">Polish</string>
+    <string name="hint_symmetry">Symmetry</string>
+    <string name="hint_lab">Lab</string>
+    <string name="exit_msg">Press Back twice to exit</string>
+
+
+    <string name="menu_sign_out">Sign out</string>
+    <string name="menu_home">Home</string>
+    <string name="logout_title">Logout</string>
+    <string name="logout_msg">Are you sure want to logout?</string>
+    <string name="btn_yes">Yes</string>
+
+    <string name="btn_delete">Delete</string>
+    <string name="hint_search">Search</string>
+    <string name="hint_group">Group</string>
+    <string name="title_contacts">Contacts</string>
+    <string name="head_selected">Selected</string>
+    <string name="removed">Removed</string>
+    <string name="menu_contact_req">Contact Requests</string>
+    <string name="tab_req_pending">Pending</string>
+    <string name="tab_req_sent">Sent</string>
+    <string name="tab_req_blocked">Blocked</string>
+    <string name="btn_accept">Accept</string>
+    <string name="btn_block">Block</string>
+    <string name="btn_reject">Reject</string>
+    <string name="btn_search_stock">Search Stock</string>
+    <string name="done">Done</string>
+    <string name="are_sure">Are you sure?</string>
+    <string name="confirm">Confirm</string>
+    <string name="btn_send_request">Send Request</string>
+    <!-- Buttons strings -->
+    <string name="add_geofences">Add geofences</string>
+    <string name="remove_geofences">Remove geofences</string>
+
+
+    <string name="insufficient_permissions">Insufficient permissions.</string>
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="login">Login</string>
+    <string name="clear">Clear</string>
+    <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s</string>
+    <string name="permission_setting">Permission Setting</string>
+    <string name="cancel">Cancel</string>
+    <string name="retry">Retry</string>
+
+
+    <string name="field_required" formatted="false">%s is required.</string>
+    <string name="invalid_format" formatted="false">In valid format. Valid format is %s</string>
+    <string name="min_format" formatted="false">Min. %s characters is required.</string>
+    <string name="err_password_limit">Password must be between 8 and 20 characters</string>
+
+    <string name="email_format">a@aaa.com</string>
+    <string name="phonenumber_format">999-999-9999</string>
+    <string name="password_min_limit">8</string>
+
+    <string name="startdate">StartDate</string>
+    <string name="view_events">VIEW EVENTS</string>
+    <string name="all">All</string>
+    <string name="active">Active</string>
+    <string name="inactive">Inactive</string>
+
+    <string name="home">Home</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_rewards">My Rewards</string>
+    <string name="my_tickets">My Tickets</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+
+
+    <string name="sign_out">Sign Out</string>
+    <string name="setting_menu">Settings</string>
+
+
+    <string name="menu">Menu</string>
+    <string name="back">Back</string>
+    <string name="share">Share</string>
+    <string name="location">Location</string>
+    <string name="addevent">AddEvent</string>
+    <string name="search">Search</string>
+    <string name="btn_skip">Skip</string>
+
+
+    <string name="don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="already_have_an_account">Already have an account ?</string>
+    <string name="st_select_signature">Enable Touch ID / Face ID login</string>
+
+
+    <string name="ago">AGO</string>
+    <string name="sige">SIGE</string>
+    <string name="department">Afdelingen</string>
+    <string name="media">Media</string>
+    <string name="calender">Kalender</string>
+    <string name="web_cast">Webcast</string>
+    <string name="webinars">webinars</string>
+    <string name="web_cast_detail">Webcast Detail</string>
+    <string name="facebook">Facebook</string>
+    <string name="contact">Kontakto</string>
+    <string name="documents">Documents</string>
+    <string name="about">About</string>
+
+
+    <string name="optimalisashon">Optimalisashon</string>
+    <string name="schools">SKOL AGO</string>
+    <string name="about_us">Sera konosi</string>
+    <string name="document">Dokumento</string>
+    <string name="notice">Notisia</string>
+    <string name="news">Nieuws</string>
+    <string name="nav_documents">Documents</string>
+    <string name="nav_about">About</string>
+
+    <string name="choose_gallery">Pick From Gallery</string>
+    <string name="choose_camera">Take From Camera</string>
+    <string name="ago_login">http://www.ago.cw/</string>
+    <string name="LoginWith">Login With</string>
+    <string name="Loginwith">Login with</string>
+    <string name="proceed_as_">or <u>Proceed as Guest</u></string>
+    <string name="mobile">Mobile</string>
+    <string name="face_id">Face ID</string>
+    <string name="or">or</string>
+    <string name="explore_and_collect">Explore and Collect</string>
+    <string name="enter_phone_number">Enter Your Phone Number</string>
+    <string name="phone_email">Please enter your mobile number to verify \n  your account. We will send a verification code \n  to this number via SMS.</string>
+    <string name="pnone_2">We will never share your personal data with anyone.\nAll data is encrypted to protect your privacy</string>
+    <string name="enter_confirmation_code">Enter confirmation code</string>
+    <string name="confrm_code_2">A code was sent to your following</string>
+    <string name="resend_verification_code_in_50_seconds">Resend verification code in 50 seconds</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="activities">Activities</string>
+    <string name="cuisine">  Cuisine  </string>
+    <string name="title">Account Setup</string>
+    <string name="dd_mm_yyyy">DD / MM / YYYY</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="view_menu">View Menu</string>
+    <string name="order_in_an_xtra_large_combo_consist_of_a_half_half_pizza_choice_of_half_simply_cheese_half_the_big_bbq_or_half_napolitana_chicken_half_romano_margherita_from_pizza_hut_for_just_28_10_u_p_46_90"><![CDATA[Order in an Xtra-Large Combo (consist of a half-half pizza, choice of half Simply Cheese & half The Big BBQ or half Napolitana Chicken & half Romano Margherita) from Pizza Hut for just $28.10 (U.P. $46.90).*]]></string>
+    <string name="you_need_to_have_an_existing_grab_account_with_a_verified_email_address_in_order_to_use_grabfood_n_you_need_to_have_the_latest_grab_app_n_orders_can_only_be_made_with_grabpay_credit_debit_cards_or_grabpay_credits">- You need to have an existing Grab account with a verified email address in order to use GrabFood.\n- You need to have the latest Grab app.\n- Orders can only be made with GrabPay (credit/debit cards or GrabPay Credits).</string>
+    <string name="good_morning">Good morning,</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="SG">SG</string>
+    <string name="MyTickets">My Tickets</string>
+    <string name="ways_to_earn_rewards">Ways to Earn More Rewards</string>
+    <string name="search_restaurant_or_activity">Search restaurant or activity</string>
+    <string-array name="currency_array">
+
+        <item>Afghani•AFN</item>
+        <item>Euro•EUR</item>
+        <item>Lek•ALL</item>
+        <item>Algerian Dinar•DZD</item>
+        <item>US Dollar•USD</item>
+        <item>Euro•EUR</item>
+        <item>Kwanza•AOA</item>
+        <item>East Caribbean Dollar•XCD</item>
+        <item>No universal currency•</item>
+        <item>East Caribbean Dollar•XCD</item>
+        <item>Argentine Peso•ARS</item>
+        <item>Armenian Dram•AMD</item>
+        <item>Aruban Florin•AWG</item>
+        <item>Australian Dollar•AUD</item>
+        <item>Euro•EUR</item>
+        <item>Azerbaijan Manat•AZN</item>
+        <item>Bahamian Dollar•BSD</item>
+        <item>Bahraini Dinar•BHD</item>
+        <item>Taka•BDT</item>
+        <item>Barbados Dollar•BBD</item>
+        <item>Belarusian Ruble•BYN</item>
+        <item>Euro•EUR</item>
+        <item>Belize Dollar•BZD</item>
+        <item>CFA Franc BCEAO•XOF</item>
+        <item>Bermudian Dollar•BMD</item>
+        <item>Indian Rupee•INR</item>
+        <item>Ngultrum•BTN</item>
+        <item>Boliviano•BOB</item>
+        <item>Mvdol•BOV</item>
+        <item>US Dollar•USD</item>
+        <item>Convertible Mark•BAM</item>
+        <item>Pula•BWP</item>
+        <item>Norwegian Krone•NOK</item>
+        <item>Brazilian Real•BRL</item>
+        <item>US Dollar•USD</item>
+        <item>Brunei Dollar•BND</item>
+        <item>Bulgarian Lev•BGN</item>
+        <item>CFA Franc BCEAO•XOF</item>
+        <item>Burundi Franc•BIF</item>
+        <item>Cabo Verde Escudo•CVE</item>
+        <item>Riel•KHR</item>
+        <item>CFA Franc BEAC•XAF</item>
+        <item>Canadian Dollar•CAD</item>
+        <item>Cayman Islands Dollar•KYD</item>
+        <item>CFA Franc BEAC•XAF</item>
+        <item>CFA Franc BEAC•XAF</item>
+        <item>Chilean Peso•CLP</item>
+        <item>Unidad de Fomento•CLF</item>
+        <item>Yuan Renminbi•CNY</item>
+        <item>Australian Dollar•AUD</item>
+        <item>Australian Dollar•AUD</item>
+        <item>Colombian Peso•COP</item>
+        <item>Unidad de Valor Real•COU</item>
+        <item>Comorian Franc •KMF</item>
+        <item>Congolese Franc•CDF</item>
+        <item>CFA Franc BEAC•XAF</item>
+        <item>New Zealand Dollar•NZD</item>
+        <item>Costa Rican Colon•CRC</item>
+        <item>CFA Franc BCEAO•XOF</item>
+        <item>Kuna•HRK</item>
+        <item>Cuban Peso•CUP</item>
+        <item>Peso Convertible•CUC</item>
+        <item>Netherlands Antillean Guilder•ANG</item>
+        <item>Euro•EUR</item>
+        <item>Czech Koruna•CZK</item>
+        <item>Danish Krone•DKK</item>
+        <item>Djibouti Franc•DJF</item>
+        <item>East Caribbean Dollar•XCD</item>
+        <item>Dominican Peso•DOP</item>
+        <item>US Dollar•USD</item>
+        <item>Egyptian Pound•EGP</item>
+        <item>El Salvador Colon•SVC</item>
+        <item>US Dollar•USD</item>
+        <item>CFA Franc BEAC•XAF</item>
+        <item>Nakfa•ERN</item>
+        <item>Euro•EUR</item>
+        <item>Ethiopian Birr•ETB</item>
+        <item>Euro•EUR</item>
+        <item>Falkland Islands Pound•FKP</item>
+        <item>Danish Krone•DKK</item>
+        <item>Fiji Dollar•FJD</item>
+        <item>Euro•EUR</item>
+        <item>Euro•EUR</item>
+        <item>Euro•EUR</item>
+        <item>CFP Franc•XPF</item>
+        <item>Euro•EUR</item>
+        <item>CFA Franc BEAC•XAF</item>
+        <item>Dalasi•GMD</item>
+        <item>Lari•GEL</item>
+        <item>Euro•EUR</item>
+        <item>Ghana Cedi•GHS</item>
+        <item>Gibraltar Pound•GIP</item>
+        <item>Euro•EUR</item>
+        <item>Danish Krone•DKK</item>
+        <item>East Caribbean Dollar•XCD</item>
+        <item>Euro•EUR</item>
+        <item>US Dollar•USD</item>
+        <item>Quetzal•GTQ</item>
+        <item>Pound Sterling•GBP</item>
+        <item>Guinean Franc•GNF</item>
+        <item>CFA Franc BCEAO•XOF</item>
+        <item>Guyana Dollar•GYD</item>
+        <item>Gourde•HTG</item>
+        <item>US Dollar•USD</item>
+        <item>Australian Dollar•AUD</item>
+        <item>Euro•EUR</item>
+        <item>Lempira•HNL</item>
+        <item>Hong Kong Dollar•HKD</item>
+        <item>Forint•HUF</item>
+        <item>Iceland Krona•ISK</item>
+        <item>Indian Rupee•INR</item>
+        <item>Rupiah•IDR</item>
+        <item>SDR (Special Drawing Right)•XDR</item>
+        <item>Iranian Rial•IRR</item>
+        <item>Iraqi Dinar•IQD</item>
+        <item>Euro•EUR</item>
+        <item>Pound Sterling•GBP</item>
+        <item>New Israeli Sheqel•ILS</item>
+        <item>Euro•EUR</item>
+        <item>Jamaican Dollar•JMD</item>
+        <item>Yen•JPY</item>
+        <item>Pound Sterling•GBP</item>
+        <item>Jordanian Dinar•JOD</item>
+        <item>Tenge•KZT</item>
+        <item>Kenyan Shilling•KES</item>
+        <item>Australian Dollar•AUD</item>
+        <item>North Korean Won•KPW</item>
+        <item>Won•KRW</item>
+        <item>Kuwaiti Dinar•KWD</item>
+        <item>Som•KGS</item>
+        <item>Lao Kip•LAK</item>
+        <item>Euro•EUR</item>
+        <item>Lebanese Pound•LBP</item>
+        <item>Loti•LSL</item>
+        <item>Rand•ZAR</item>
+        <item>Liberian Dollar•LRD</item>
+        <item>Libyan Dinar•LYD</item>
+        <item>Swiss Franc•CHF</item>
+        <item>Euro•EUR</item>
+        <item>Euro•EUR</item>
+        <item>Pataca•MOP</item>
+        <item>Denar•MKD</item>
+        <item>Malagasy Ariary•MGA</item>
+        <item>Malawi Kwacha•MWK</item>
+        <item>Malaysian Ringgit•MYR</item>
+        <item>Rufiyaa•MVR</item>
+        <item>CFA Franc BCEAO•XOF</item>
+        <item>Euro•EUR</item>
+        <item>US Dollar•USD</item>
+        <item>Euro•EUR</item>
+        <item>Ouguiya•MRU</item>
+        <item>Mauritius Rupee•MUR</item>
+        <item>Euro•EUR</item>
+        <item>ADB Unit of Account•XUA</item>
+        <item>Mexican Peso•MXN</item>
+        <item>Mexican Unidad de Inversion (UDI)•MXV</item>
+        <item>US Dollar•USD</item>
+        <item>Moldovan Leu•MDL</item>
+        <item>Euro•EUR</item>
+        <item>Tugrik•MNT</item>
+        <item>Euro•EUR</item>
+        <item>East Caribbean Dollar•XCD</item>
+        <item>Moroccan Dirham•MAD</item>
+        <item>Mozambique Metical•MZN</item>
+        <item>Kyat•MMK</item>
+        <item>Namibia Dollar•NAD</item>
+        <item>Rand•ZAR</item>
+        <item>Australian Dollar•AUD</item>
+        <item>Nepalese Rupee•NPR</item>
+        <item>Euro•EUR</item>
+        <item>CFP Franc•XPF</item>
+        <item>New Zealand Dollar•NZD</item>
+        <item>Cordoba Oro•NIO</item>
+        <item>CFA Franc BCEAO•XOF</item>
+        <item>Naira•NGN</item>
+        <item>New Zealand Dollar•NZD</item>
+        <item>Australian Dollar•AUD</item>
+        <item>US Dollar•USD</item>
+        <item>Norwegian Krone•NOK</item>
+        <item>Rial Omani•OMR</item>
+        <item>Pakistan Rupee•PKR</item>
+        <item>US Dollar•USD</item>
+        <item>No universal currency•</item>
+        <item>Balboa•PAB</item>
+        <item>US Dollar•USD</item>
+        <item>Kina•PGK</item>
+        <item>Guarani•PYG</item>
+        <item>Sol•PEN</item>
+        <item>Philippine Peso•PHP</item>
+        <item>New Zealand Dollar•NZD</item>
+        <item>Zloty•PLN</item>
+        <item>Euro•EUR</item>
+        <item>US Dollar•USD</item>
+        <item>Qatari Rial•QAR</item>
+        <item>Euro•EUR</item>
+        <item>Romanian Leu•RON</item>
+        <item>Russian Ruble•RUB</item>
+        <item>Rwanda Franc•RWF</item>
+        <item>Euro•EUR</item>
+        <item>Saint Helena Pound•SHP</item>
+        <item>East Caribbean Dollar•XCD</item>
+        <item>East Caribbean Dollar•XCD</item>
+        <item>Euro•EUR</item>
+        <item>Euro•EUR</item>
+        <item>East Caribbean Dollar•XCD</item>
+        <item>Tala•WST</item>
+        <item>Euro•EUR</item>
+        <item>Dobra•STN</item>
+        <item>Saudi Riyal•SAR</item>
+        <item>CFA Franc BCEAO•XOF</item>
+        <item>Serbian Dinar•RSD</item>
+        <item>Seychelles Rupee•SCR</item>
+        <item>Leone•SLL</item>
+        <item>Singapore Dollar•SGD</item>
+        <item>Netherlands Antillean Guilder•ANG</item>
+        <item>Sucre•XSU</item>
+        <item>Euro•EUR</item>
+        <item>Euro•EUR</item>
+        <item>Solomon Islands Dollar•SBD</item>
+        <item>Somali Shilling•SOS</item>
+        <item>Rand•ZAR</item>
+        <item>No universal currency•</item>
+        <item>South Sudanese Pound•SSP</item>
+        <item>Euro•EUR</item>
+        <item>Sri Lanka Rupee•LKR</item>
+        <item>Sudanese Pound•SDG</item>
+        <item>Surinam Dollar•SRD</item>
+        <item>Norwegian Krone•NOK</item>
+        <item>Lilangeni•SZL</item>
+        <item>Swedish Krona•SEK</item>
+        <item>Swiss Franc•CHF</item>
+        <item>WIR Euro•CHE</item>
+        <item>WIR Franc•CHW</item>
+        <item>Syrian Pound•SYP</item>
+        <item>New Taiwan Dollar•TWD</item>
+        <item>Somoni•TJS</item>
+        <item>Tanzanian Shilling•TZS</item>
+        <item>Baht•THB</item>
+        <item>US Dollar•USD</item>
+        <item>CFA Franc BCEAO•XOF</item>
+        <item>New Zealand Dollar•NZD</item>
+        <item>Pa’anga•TOP</item>
+        <item>Trinidad and Tobago Dollar•TTD</item>
+        <item>Tunisian Dinar•TND</item>
+        <item>Turkish Lira•TRY</item>
+        <item>Turkmenistan New Manat•TMT</item>
+        <item>US Dollar•USD</item>
+        <item>Australian Dollar•AUD</item>
+        <item>Uganda Shilling•UGX</item>
+        <item>Hryvnia•UAH</item>
+        <item>UAE Dirham•AED</item>
+        <item>Pound Sterling•GBP</item>
+        <item>US Dollar•USD</item>
+        <item>US Dollar•USD</item>
+        <item>US Dollar (Next day)•USN</item>
+        <item>Peso Uruguayo•UYU</item>
+        <item>Uruguay Peso en Unidades Indexadas (UI)•UYI</item>
+        <item>Unidad Previsional•UYW</item>
+        <item>Uzbekistan Sum•UZS</item>
+        <item>Vatu•VUV</item>
+        <item>Bolívar Soberano•VES</item>
+        <item>Dong•VND</item>
+        <item>US Dollar•USD</item>
+        <item>US Dollar•USD</item>
+        <item>CFP Franc•XPF</item>
+        <item>Moroccan Dirham•MAD</item>
+        <item>Yemeni Rial•YER</item>
+        <item>Zambian Kwacha•ZMW</item>
+        <item>Zimbabwe Dollar•ZWL</item>
+        <item>Gold•XAU</item>
+        <item>Palladium•XPD</item>
+        <item>Platinum•XPT</item>
+        <item>Silver•XAG</item>
+
+    </string-array>
+    <string-array name="language_array">
+        <item>Mandarin</item>
+        <item>Spanish</item>
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Arabic</item>
+        <item>Portuguese</item>
+        <item>Bengali</item>
+        <item>Russian</item>
+        <item>Japanese</item>
+        <item>Punjabi</item>
+        <item>German</item>
+        <item>Javanese</item>
+        <item>Wu (inc. Shanghainese)</item>
+        <item>Malay/Indonesian</item>
+        <item>Telugu</item>
+        <item>Vietnamese</item>
+        <item>Korean</item>
+        <item>French</item>
+        <item>Marathi</item>
+        <item>Tamil</item>
+        <item>Urdu</item>
+        <item>Turkish</item>
+        <item>Italian</item>
+        <item>Yue (Cantonese)</item>
+        <item>Thai</item>
+        <item>Gujarati</item>
+        <item>Jin</item>
+        <item>Southern Min</item>
+        <item>Persian</item>
+        <item>Polish</item>
+        <item>Pashto</item>
+        <item>Kannada</item>
+        <item>Xiang (Hunnanese)</item>
+        <item>Malayalam</item>
+        <item>Sundanese</item>
+        <item>Hausa</item>
+        <item>Odia (Oriya)</item>
+        <item>Burmese</item>
+        <item>Hakka</item>
+        <item>Ukrainian</item>
+        <item>Bhojpuri</item>
+        <item>Tagalog</item>
+        <item>Yoruba</item>
+        <item>Maithili</item>
+        <item>Uzbek</item>
+        <item>Sindhi</item>
+        <item>Amharic</item>
+        <item>Fula</item>
+        <item>Romanian</item>
+        <item>Oromo</item>
+        <item>Igbo</item>
+        <item>Azerbaijani</item>
+        <item>Awadhi</item>
+        <item>Gan Chinese</item>
+        <item>Cebuano (Visayan)</item>
+        <item>Dutch</item>
+        <item>Kurdish</item>
+        <item>Serbo-Croatian</item>
+        <item>Malagasy</item>
+        <item>Saraiki</item>
+        <item>Nepali</item>
+        <item>Sinhalese</item>
+        <item>Chittagonian</item>
+        <item>Zhuang</item>
+        <item>Khmer</item>
+        <item>Turkmen</item>
+        <item>Assamese</item>
+        <item>Madurese</item>
+        <item>Somali</item>
+        <item>Marwari</item>
+        <item>Magahi</item>
+        <item>Haryanvi</item>
+        <item>Hungarian</item>
+        <item>Chhattisgarhi</item>
+        <item>Greek</item>
+        <item>Chewa</item>
+        <item>Deccan</item>
+        <item>Akan</item>
+        <item>Kazakh</item>
+        <item>Northern Min</item>
+        <item>Sylheti</item>
+        <item>Zulu</item>
+        <item>Czech</item>
+        <item>Kinyarwanda</item>
+        <item>Dhundhari</item>
+        <item>Haitian Creole</item>
+        <item>Eastern Min</item>
+        <item>Ilocano</item>
+        <item>Quechua</item>
+        <item>Kirundi</item>
+        <item>Swedish</item>
+        <item>Hmong</item>
+        <item>Shona</item>
+        <item>Uyghur</item>
+        <item>Hiligaynon</item>
+        <item>Mossi</item>
+        <item>Xhosa</item>
+        <item>Belarusian</item>
+        <item>Balochi</item>
+        <item>Konkani</item>
+    </string-array>
+    <string-array name="countries_array">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antarctica</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Aruba</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Bahamas</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Barbados</item>
+        <item>Belarus</item>
+        <item>Belgium</item>
+        <item>Belize</item>
+        <item>Benin</item>
+        <item>Bermuda</item>
+        <item>Bhutan</item>
+        <item>Bolivia</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Botswana</item>
+        <item>Brazil</item>
+        <item>British Indian Ocean Territory</item>
+        <item>British Virgin Islands</item>
+        <item>Brunei</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Cambodia</item>
+        <item>Cameroon</item>
+        <item>Canada</item>
+        <item>Cape Verde</item>
+        <item>Cayman Islands</item>
+        <item>Central African Republic</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Christmas Island</item>
+        <item>Cocos Islands</item>
+        <item>Colombia</item>
+        <item>Comoros</item>
+        <item>Cook Islands</item>
+        <item>Costa Rica</item>
+        <item>Croatia</item>
+        <item>Cuba</item>
+        <item>Cyprus</item>
+        <item>Czech Republic</item>
+        <item>Democratic Republic of the Congo</item>
+        <item>Denmark</item>
+        <item>Djibouti</item>
+        <item>Dominica</item>
+        <item>Dominican Republic</item>
+        <item>East Timor</item>
+        <item>Ecuador</item>
+        <item>Egypt</item>
+        <item>El Salvador</item>
+        <item>Equatorial Guinea</item>
+        <item>Eritrea</item>
+        <item>Estonia</item>
+        <item>Ethiopia</item>
+        <item>Falkland Islands</item>
+        <item>Faroe Islands</item>
+        <item>Fiji</item>
+        <item>Finland</item>
+        <item>France</item>
+        <item>French Polynesia</item>
+        <item>Gabon</item>
+        <item>Gambia</item>
+        <item>Georgia</item>
+        <item>Germany</item>
+        <item>Ghana</item>
+        <item>Gibraltar</item>
+        <item>Greece</item>
+        <item>Greenland</item>
+        <item>Grenada</item>
+        <item>Guam</item>
+        <item>Guatemala</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Guyana</item>
+        <item>Haiti</item>
+        <item>Honduras</item>
+        <item>Hong Kong</item>
+        <item>Hungary</item>
+        <item>Iceland</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Ireland</item>
+        <item>Isle of Man</item>
+        <item>Israel</item>
+        <item>Italy</item>
+        <item>Ivory Coast</item>
+        <item>Jamaica</item>
+        <item>Japan</item>
+        <item>Jersey</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+        <item>Kiribati</item>
+        <item>Kuwait</item>
+        <item>Kyrgyzstan</item>
+        <item>Laos</item>
+        <item>Latvia</item>
+        <item>Lebanon</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Libya</item>
+        <item>Liechtenstein</item>
+        <item>Lithuania</item>
+        <item>Luxembourg</item>
+        <item>Macao</item>
+        <item>Macedonia</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mali</item>
+        <item>Malta</item>
+        <item>Marshall Islands</item>
+        <item>Mauritania</item>
+        <item>Mauritius</item>
+        <item>Mayotte</item>
+        <item>Mexico</item>
+        <item>Micronesia</item>
+        <item>Moldova</item>
+        <item>Monaco</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>Montserrat</item>
+        <item>Morocco</item>
+        <item>Mozambique</item>
+        <item>Myanmar</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Netherlands</item>
+        <item>Netherlands Antilles</item>
+        <item>New Caledonia</item>
+        <item>New Zealand</item>
+        <item>Nicaragua</item>
+        <item>Niger</item>
+        <item>Nigeria</item>
+        <item>Niue</item>
+        <item>North Korea</item>
+        <item>Northern Mariana Islands</item>
+        <item>Norway</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Palau</item>
+        <item>Panama</item>
+        <item>Papua New Guinea</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Philippines</item>
+        <item>Pitcairn</item>
+        <item>Poland</item>
+        <item>Portugal</item>
+        <item>Puerto Rico</item>
+        <item>Qatar</item>
+        <item>Republic of the Congo</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Rwanda</item>
+        <item>Saint Barthelemy</item>
+        <item>Saint Helena</item>
+        <item>Saint Kitts and Nevis</item>
+        <item>Saint Lucia</item>
+        <item>Saint Martin</item>
+        <item>Saint Pierre and Miquelon</item>
+        <item>Saint Vincent and the Grenadines</item>
+        <item>Samoa</item>
+        <item>San Marino</item>
+        <item>Sao Tome and Principe</item>
+        <item>Saudi Arabia</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leone</item>
+        <item>Singapore</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Solomon Islands</item>
+        <item>Somalia</item>
+        <item>South Africa</item>
+        <item>South Georgia and the South Sandwich Islands</item>
+        <item>South Korea</item>
+        <item>Spain</item>
+        <item>Sri Lanka</item>
+        <item>Sudan</item>
+        <item>Suriname</item>
+        <item>Svalbard and Jan Mayen</item>
+        <item>Swaziland</item>
+        <item>Sweden</item>
+        <item>Switzerland</item>
+        <item>Syria</item>
+        <item>Taiwan</item>
+        <item>Tajikistan</item>
+        <item>Tanzania</item>
+        <item>Thailand</item>
+        <item>Togo</item>
+        <item>Tokelau</item>
+        <item>Tonga</item>
+        <item>Trinidad and Tobago</item>
+        <item>Tunisia</item>
+        <item>Turkey</item>
+        <item>Turkmenistan</item>
+        <item>Turks and Caicos Islands</item>
+        <item>Tuvalu</item>
+        <item>U.S. Virgin Islands</item>
+        <item>Uganda</item>
+        <item>Ukraine</item>
+        <item>United Arab Emirates</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        <item>Uruguay</item>
+        <item>Uzbekistan</item>
+        <item>Vanuatu</item>
+        <item>Vatican</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Wallis and Futuna</item>
+        <item>Western Sahara</item>
+        <item>Yemen</item>
+        <item>Zambia</item>
+        <item>Zimbabwe</item>
+    </string-array>
+</resources>

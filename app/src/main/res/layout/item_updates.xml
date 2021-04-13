@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.github.captain_miao.optroundcardview.OptRoundCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:optRoundCardBackgroundColor="@color/white"
+        app:optRoundCardCornerRadius="@dimen/_20sdp"
+        app:optRoundCardElevation="@dimen/_10sdp"
+        app:optRoundContentPadding="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/kfc_logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.tripkipedia.custom.CBTextView
+                    android:id="@+id/tvTitle"
+                    style="@style/txt_dark_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Freebies OPEN!"
+                    android:textStyle="bold" />
+
+                <com.tripkipedia.custom.CMTextView
+                    android:id="@+id/tvSecond"
+                    style="@style/txt_dark_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.6"
+                    android:text="Start your journey now" />
+            </LinearLayout>
+
+            <com.tripkipedia.custom.CBButtonView
+                android:id="@+id/btnNext"
+                style="@style/txt_fff_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/btn_notification"
+                android:text="Go"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+</layout>

@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+
+        <variable
+            name="viewClickHandler"
+            type="com.tripkipedia.ui.myProfile.viewmodel.MyProfileViewModel.ViewClickHandler" />
+
+        <variable
+            name="viewModel"
+            type="com.tripkipedia.ui.myProfile.viewmodel.MyProfileViewModel" />
+    </data>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/success_header" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/fullscreen_status_bar_height"
+                android:gravity="center|top"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_80sdp">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/home_circle" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/image_home"
+                            app:civ_border_color="#FF000000" />
+                    </FrameLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/gold_banner" />
+                </FrameLayout>
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/profile_progress" />
+
+                <com.tripkipedia.custom.CMTextView
+                    style="@style/txt_yellow_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@mipmap/profile_info"
+                    android:gravity="center_vertical"
+                    android:text="Earn 300 T-Coins by 31 Dec 2019 to unlock VIP!"
+                    android:textStyle="bold" />
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <com.github.captain_miao.optroundcardview.OptRoundCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:elevation="@dimen/_50sdp"
+                            app:optRoundCardCornerRadius="@dimen/_25sdp"
+                            app:optRoundCardElevation="@dimen/_10sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_15sdp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.tripkipedia.custom.CBTextView
+                                        style="@style/txt_dark_20"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:text="Profile"
+                                        android:textStyle="bold" />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="end">
+
+                                        <androidx.appcompat.widget.AppCompatImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:onClick="@{(v)-> viewClickHandler.onEditClick()}"
+                                            android:src="@mipmap/profile_edit" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:stretchColumns="*">
+
+                                    <TableRow>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal">
+
+                                            <androidx.appcompat.widget.AppCompatImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@mipmap/profile_name" />
+
+                                            <com.tripkipedia.custom.CMTextView
+                                                style="@style/txt_dark_14"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_10sdp"
+                                                android:text="James Smith"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>
+                                    </TableRow>
+
+                                    <TableRow android:layout_marginTop="@dimen/_5sdp">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal">
+
+                                            <androidx.appcompat.widget.AppCompatImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@mipmap/profile_birthday" />
+
+                                            <com.tripkipedia.custom.CMTextView
+                                                style="@style/txt_dark_14"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_10sdp"
+                                                android:text="01 January 1988"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>
+                                    </TableRow>
+
+                                    <TableRow android:layout_marginTop="@dimen/_5sdp">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal">
+
+                                            <androidx.appcompat.widget.AppCompatImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@mipmap/profile_email" />
+
+                                            <com.tripkipedia.custom.CMTextView
+                                                style="@style/txt_dark_14"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_10sdp"
+                                                android:text="james.s@gmail.com"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>
+                                    </TableRow>
+
+                                    <TableRow android:layout_marginTop="@dimen/_5sdp">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal">
+
+                                            <androidx.appcompat.widget.AppCompatImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@mipmap/profile_location" />
+
+                                            <com.tripkipedia.custom.CMTextView
+                                                style="@style/txt_dark_14"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_10sdp"
+                                                android:text="Singapore"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>
+                                    </TableRow>
+
+                                    <TableRow android:layout_marginTop="@dimen/_5sdp">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal">
+
+                                            <androidx.appcompat.widget.AppCompatImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@mipmap/profile_male" />
+
+                                            <com.tripkipedia.custom.CMTextView
+                                                style="@style/txt_dark_14"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_10sdp"
+                                                android:text="Male"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>
+                                    </TableRow>
+
+
+                                </TableLayout>
+                            </LinearLayout>
+                        </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+                        <com.github.captain_miao.optroundcardview.OptRoundCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:elevation="@dimen/_50sdp"
+                            app:optRoundCardCornerRadius="@dimen/_25sdp"
+                            app:optRoundCardElevation="@dimen/_10sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_15sdp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.tripkipedia.custom.CBTextView
+                                        style="@style/txt_dark_20"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/_3sdp"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:text="Personal Information"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:stretchColumns="*">
+
+                                    <TableRow>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal">
+
+                                            <androidx.appcompat.widget.AppCompatImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@mipmap/profile_passport" />
+
+                                            <com.tripkipedia.custom.CMTextView
+                                                style="@style/txt_dark_14"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_10sdp"
+                                                android:text="My Passport"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="end"
+                                            android:onClick="@{(v)-> viewClickHandler.onMyPassportClick()}">
+
+                                            <androidx.appcompat.widget.AppCompatImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:src="@mipmap/profile_forward" />
+                                        </LinearLayout>
+                                    </TableRow>
+
+                                    <TableRow android:layout_marginTop="@dimen/_5sdp">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal">
+
+                                            <androidx.appcompat.widget.AppCompatImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@mipmap/profile_interests" />
+
+                                            <com.tripkipedia.custom.CMTextView
+                                                style="@style/txt_dark_14"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_10sdp"
+                                                android:text="My Interests"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="end">
+
+                                            <androidx.appcompat.widget.AppCompatImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:src="@mipmap/profile_forward" />
+                                        </LinearLayout>
+                                    </TableRow>
+
+                                    <TableRow android:layout_marginTop="@dimen/_5sdp">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/_5sdp"
+                                            android:gravity="center_vertical"
+                                            android:orientation="horizontal">
+
+                                            <androidx.appcompat.widget.AppCompatImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:src="@mipmap/profile_payment" />
+
+                                            <com.tripkipedia.custom.CMTextView
+                                                style="@style/txt_dark_14"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginStart="@dimen/_10sdp"
+                                                android:text="My Payment"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="end"
+                                            android:onClick="@{(v)-> viewClickHandler.onMyPaymentClick()}">
+
+                                            <androidx.appcompat.widget.AppCompatImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center_vertical"
+                                                android:src="@mipmap/profile_forward" />
+                                        </LinearLayout>
+                                    </TableRow>
+
+                                </TableLayout>
+                            </LinearLayout>
+                        </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+                        <com.tripkipedia.custom.CBButtonView
+                            style="@style/txt_fff_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_60sdp"
+                            android:background="@mipmap/profile_btn_bg"
+                            android:text="Log Out"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_3sdp"
+                            android:textAllCaps="false"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </LinearLayout>
+
+
+        <include
+            android:id="@+id/topbar"
+            layout="@layout/topbar" />
+
+    </FrameLayout>
+
+</layout>

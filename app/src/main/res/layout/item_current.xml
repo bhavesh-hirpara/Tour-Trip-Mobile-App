@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp">
+
+        <com.vipulasri.ticketview.TicketView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:outlineProvider="bounds"
+            app:ticketBorderColor="#F2F2F2"
+            app:ticketBorderWidth="10dp"
+            app:ticketCornerRadius="@dimen/_25sdp"
+            app:ticketCornerType="rounded"
+            app:ticketDividerDashGap="@dimen/dp4"
+            app:ticketDividerDashLength="@dimen/dp5"
+            app:ticketDividerPadding="5dp"
+            app:ticketDividerType="dash"
+            app:ticketDividerWidth="@dimen/dp1"
+            app:ticketElevation="10dp"
+            app:ticketOrientation="vertical"
+            app:ticketScallopPositionPercent="80"
+            app:ticketScallopRadius="10dp"
+            app:ticketShowBorder="false"
+            app:ticketShowDivider="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp15">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/item_current_bounce_logo" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                    <com.tripkipedia.custom.CBTextView
+                        style="@style/txt_dark_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bounce"
+                        android:textStyle="bold" />
+
+                    <com.tripkipedia.custom.CMTextView
+                        style="@style/txt_dark_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Entry Tickets (3)"
+                        android:textStyle="bold" />
+
+                    <com.tripkipedia.custom.CMTextView
+                        style="@style/txt_dark_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:alpha="0.5"
+                        android:text="Valid till 31 Dec 2019" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSecond"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end|center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:src="@mipmap/item_current_next" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</layout>

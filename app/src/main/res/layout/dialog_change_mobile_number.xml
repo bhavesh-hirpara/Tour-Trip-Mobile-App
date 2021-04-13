@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.github.captain_miao.optroundcardview.OptRoundCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:optRoundCardCornerRadius="@dimen/_25sdp"
+        app:optRoundCardElevation="@dimen/_10sdp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_20sdp"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <com.tripkipedia.custom.CBTextView
+                    style="@style/txt_dark_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:text="New Mobile Number"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/ly_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toEndOf="@id/tvText"
+                    app:layout_constraintTop_toBottomOf="@id/tvText">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp"
+                        style="@style/txt_dark_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sppiner_back"
+                        android:gravity="center"
+                        app:ccpDialog_keyboardAutoPopup="false"
+                        app:ccpDialog_textColor="@color/sppiner_text"
+                        app:ccp_arrowColor="@color/sppiner_text"
+                        app:ccp_contentColor="@color/sppiner_text"
+                        app:ccp_defaultNameCode="IN" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="10dp"
+                        android:gravity="center"
+                        android:textColor="@color/sppiner_text"
+                        tools:targetApi="o">
+
+                        <com.tripkipedia.custom.CBEditTextView
+                            android:id="@+id/editLoginEmail"
+                            style="@style/txt_editText_15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:background="@drawable/mo_number_back"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/btnNext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/btn_next_filled" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.tripkipedia.custom.CBTextView
+                            style="@style/txt_fff_18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Save"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:src="@mipmap/dialog_close" />
+        </FrameLayout>
+    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+</layout>

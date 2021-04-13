@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/comfort_delgro" />
+
+        <com.tripkipedia.custom.CMTextView
+            android:id="@+id/tvTitle"
+            style="@style/txt_dark_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Comfort\nDelgro"
+            android:textStyle="bold" />
+
+        <com.tripkipedia.custom.CMTextView
+            android:id="@+id/tvSecond"
+            style="@style/txt_dark_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:gravity="center"
+            android:text="$12~$14"
+            android:textStyle="bold" />
+    </LinearLayout>
+</layout>

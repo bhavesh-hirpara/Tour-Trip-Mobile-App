@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.tripkipedia.ui.verify.viewmodel.VerifyViewModel" />
+
+        <variable
+            name="viewClickHandler"
+            type="com.tripkipedia.ui.verify.viewmodel.VerifyViewModel.ViewClickHandler" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/login_bg" />
+
+        <include
+            android:id="@+id/topbar"
+            layout="@layout/topbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.tripkipedia.custom.CBTextView
+            android:id="@+id/tvConf_code"
+            style="@style/txt_fff_25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:gravity="center"
+            android:text="@string/enter_confirmation_code"
+            app:layout_constraintTop_toBottomOf="@id/topbar" />
+
+        <LinearLayout
+            android:id="@+id/llNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/tvConf_code">
+
+            <com.tripkipedia.custom.CTextView
+                android:id="@+id/tvText"
+                style="@style/txt_fff_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/confrm_code_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.tripkipedia.custom.CTextView
+                    style="@style/txt_fff_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="number:" />
+
+                <com.tripkipedia.custom.CBTextView
+                    style="@style/txt_fff_14"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" +56 456 789" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <com.tripkipedia.custom.PinView
+            android:id="@+id/pnVerifyCode"
+            style="@style/txt_purple_18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp"
+            android:focusable="false"
+            android:focusedByDefault="false"
+            android:gravity="center"
+            app:cursorVisible="false"
+            app:layout_constraintTop_toBottomOf="@id/llNumber"
+            app:password="false"
+            app:pinBackground="@drawable/round_pin_back"
+            app:pinHeight="@dimen/dp50"
+            app:pinLength="4"
+            app:pinWidth="@dimen/dp40"
+            app:splitWidth="@dimen/_6sdp" />
+
+
+        <com.tripkipedia.custom.CTextView
+            android:id="@+id/tvMsg"
+            style="@style/txt_fff_14"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@drawable/back_text"
+            android:gravity="center|top"
+            android:padding="@dimen/_11sdp"
+            android:text="@string/resend_verification_code_in_50_seconds"
+            app:layout_constraintTop_toBottomOf="@id/pnVerifyCode" />
+
+        <com.tripkipedia.custom.CBButtonView
+            style="@style/txt_purple_18"
+            android:id="@+id/btn_varify"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@mipmap/button_next"
+            android:onClick="@{(v)->viewClickHandler.onVerify(v)}"
+            android:text="Verify"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/tvMsg" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

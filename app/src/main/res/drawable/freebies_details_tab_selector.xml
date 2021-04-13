@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <inset android:drawable="@drawable/freebies_tab" android:insetTop="@dimen/dp2" android:insetBottom="@dimen/dp2" />
+    </item>
+    <item android:state_selected="false">
+        <inset android:drawable="@drawable/tab_background_unselected" android:inset="@dimen/dp3" />
+    </item>
+</selector>

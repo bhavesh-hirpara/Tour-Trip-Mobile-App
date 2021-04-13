@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+
+        <variable
+            name="viewClickHandler"
+            type="com.tripkipedia.ui.settings.privacyPolicy.viewmodel.PrivacyPolicyViewModel.ViewClickHandler" />
+
+        <variable
+            name="viewModel"
+            type="com.tripkipedia.ui.settings.privacyPolicy.viewmodel.PrivacyPolicyViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/settings_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/topbar"
+                layout="@layout/topbar" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.github.captain_miao.optroundcardview.OptRoundCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginStart="@dimen/dp10"
+                        android:layout_marginTop="@dimen/dp25"
+                        android:layout_marginEnd="@dimen/dp10"
+                        android:layout_marginBottom="@dimen/dp10"
+                        android:elevation="@dimen/dp50"
+                        app:optRoundCardCornerRadius="@dimen/dp25"
+                        app:optRoundCardElevation="@dimen/dp10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dp15"
+                                android:layout_marginTop="@dimen/dp15"
+                                android:layout_marginEnd="@dimen/dp15"
+                                android:orientation="horizontal">
+
+                                <com.tripkipedia.custom.CBTextView
+                                    style="@style/txt_dark_20"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tripkipedia Privacy\nPolicy"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:divider="@color/black"
+                                android:showDividers="middle"
+                                android:stretchColumns="1">
+
+                                <TableRow
+                                    android:layout_marginStart="@dimen/dp15"
+                                    android:layout_marginTop="@dimen/dp5"
+                                    android:layout_marginEnd="@dimen/dp15"
+                                    android:layout_marginBottom="@dimen/dp5">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.tripkipedia.custom.CBTextView
+                                            style="@style/txt_purple_14"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="1. Information That We Collect From You"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_marginStart="@dimen/dp15"
+                                    android:layout_marginTop="@dimen/dp5"
+                                    android:layout_marginEnd="@dimen/dp15"
+                                    android:layout_marginBottom="@dimen/dp5">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.tripkipedia.custom.CBTextView
+                                            style="@style/txt_purple_14"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="2. Use Of Your Information"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_marginStart="@dimen/dp15"
+                                    android:layout_marginTop="@dimen/dp5"
+                                    android:layout_marginEnd="@dimen/dp15"
+                                    android:layout_marginBottom="@dimen/dp5">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.tripkipedia.custom.CBTextView
+                                            style="@style/txt_purple_14"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="3. Disclosure Of Your Information"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_marginStart="@dimen/dp15"
+                                    android:layout_marginTop="@dimen/dp5"
+                                    android:layout_marginEnd="@dimen/dp15"
+                                    android:layout_marginBottom="@dimen/dp5">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.tripkipedia.custom.CBTextView
+                                            style="@style/txt_purple_14"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="4. Security And Data Retention"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_marginStart="@dimen/dp15"
+                                    android:layout_marginTop="@dimen/dp5"
+                                    android:layout_marginEnd="@dimen/dp15"
+                                    android:layout_marginBottom="@dimen/dp5">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.tripkipedia.custom.CBTextView
+                                            style="@style/txt_purple_14"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="5. Accessing And Updating"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_marginStart="@dimen/dp15"
+                                    android:layout_marginTop="@dimen/dp5"
+                                    android:layout_marginEnd="@dimen/dp15"
+                                    android:layout_marginBottom="@dimen/dp5">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.tripkipedia.custom.CBTextView
+                                            style="@style/txt_purple_14"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="6. Changes To Our Privacy Policy"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_marginStart="@dimen/dp15"
+                                    android:layout_marginTop="@dimen/dp5"
+                                    android:layout_marginEnd="@dimen/dp15"
+                                    android:layout_marginBottom="@dimen/dp15">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        android:orientation="horizontal">
+
+                                        <com.tripkipedia.custom.CBTextView
+                                            style="@style/txt_purple_14"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="7. Contact"
+                                            android:textStyle="bold" />
+                                    </LinearLayout>
+
+                                </TableRow>
+
+                            </TableLayout>
+                        </LinearLayout>
+                    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dp20"
+                        android:orientation="vertical">
+
+                        <com.tripkipedia.custom.CBTextView
+                            style="@style/txt_dark_20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1. Information That We\nCollect From You"
+                            android:textStyle="bold" />
+
+                        <com.tripkipedia.custom.CMTextView
+                            style="@style/txt_dark_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:text="Laboris velit reprehenderit sit quis exercitation voluptate cillum labore Lorem cillum non sunt enim proident.\nNon deserunt mollit velit est eiusmod labore culpa esse amet aliqua velit velit aliquip ex. Ea et aliqua incididunt id in veniam"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</layout>

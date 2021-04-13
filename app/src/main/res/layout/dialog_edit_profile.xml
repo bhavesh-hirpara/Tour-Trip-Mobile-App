@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.github.captain_miao.optroundcardview.OptRoundCardView
+        android:id="@+id/cvProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_20sdp"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        app:optRoundCardCornerRadius="@dimen/_30sdp"
+        app:optRoundCardElevation="@dimen/_20sdp"
+        app:optRoundCardLeftBottomCorner="false"
+        app:optRoundCardRightBottomCorner="false"
+        app:optRoundCardTopEdges="false">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <com.tripkipedia.custom.CBTextView
+                        style="@style/txt_dark_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit Profile"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:layout_width="@dimen/_85sdp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_profile_pic"
+                            app:civ_border_color="#FF000000" />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="end|bottom"
+                            android:src="@mipmap/camera" />
+
+                    </FrameLayout>
+
+                    <com.tripkipedia.custom.CBTextView
+                        style="@style/txt_purple_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Salutation"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        style="@style/spinner_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@mipmap/rectangle_53"
+                        android:dropDownVerticalOffset="@dimen/_35sdp"
+                        android:spinnerMode="dropdown"
+                        tools:listitem="@layout/item_salutation" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:orientation="horizontal">
+
+                        <com.tripkipedia.custom.CBTextView
+                            style="@style/txt_purple_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Full Name*"
+                            android:textStyle="bold" />
+
+                        <com.tripkipedia.custom.CBTextView
+                            style="@style/txt_dark_light_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:text="(as per passport)"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                    <com.tripkipedia.custom.CBEditTextView
+                        style="@style/txt_dark_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@mipmap/rectangle_53"
+                        android:hint="Enter your full name"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textColorHint="@color/edt_hint" />
+
+                    <com.tripkipedia.custom.CBTextView
+                        style="@style/txt_purple_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Date of Birth*"
+                        android:textStyle="bold" />
+
+                    <com.tripkipedia.custom.CBTextView
+                        android:id="@+id/tvDate"
+                        style="@style/txt_dark_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@mipmap/rectangle_53"
+                        android:hint="@string/dd_mm_yyyy"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textColorHint="@color/edt_hint" />
+
+                    <com.tripkipedia.custom.CBTextView
+                        style="@style/txt_purple_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Email Address*"
+                        android:textStyle="bold" />
+
+                    <com.tripkipedia.custom.CBEditTextView
+                        style="@style/txt_dark_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@mipmap/rectangle_53"
+                        android:hint="Enter your email address"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:textColorHint="@color/edt_hint" />
+
+                    <com.tripkipedia.custom.CBTextView
+                        style="@style/txt_purple_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:text="Country of Residence"
+                        android:textStyle="bold" />
+
+                    <com.tripkipedia.custom.CBTextView
+                        android:id="@+id/tvCountrySelection"
+                        style="@style/txt_dark_14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@mipmap/rectangle_53"
+                        android:drawableEnd="@drawable/ic_dropdown"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="Select" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <com.tripkipedia.custom.CBTextView
+                            style="@style/txt_purple_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                style="@style/radio_green_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTintMode="multiply"
+                                android:text="@string/male"
+                                tools:ignore="TooDeepLayout" />
+
+                            <RadioButton
+                                style="@style/radio_green_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:text="@string/female" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <com.tripkipedia.custom.CBButtonView
+                        android:id="@+id/btnNext"
+                        style="@style/txt_fff_18"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5ssp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@mipmap/btn_next_filled"
+                        android:text="Save"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:src="@mipmap/dialog_close" />
+            </FrameLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+</layout>

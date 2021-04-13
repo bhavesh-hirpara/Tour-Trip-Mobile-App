@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+
+        <variable
+            name="viewClickHandler"
+            type="com.tripkipedia.ui.voucherDetails.viewmodel.VoucherDetailsViewModel.ViewClickHandler" />
+
+        <variable
+            name="viewModel"
+            type="com.tripkipedia.ui.voucherDetails.viewmodel.VoucherDetailsViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@mipmap/voucher_details_bg" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/topbar"
+                layout="@layout/topbar" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.github.captain_miao.optroundcardview.OptRoundCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="@dimen/_110sdp"
+                    android:elevation="@dimen/_50sdp"
+                    app:optRoundCardCornerRadius="@dimen/_25sdp"
+                    app:optRoundCardElevation="@dimen/_10sdp"
+                    app:optRoundCardLeftBottomCorner="false"
+                    app:optRoundCardRightBottomCorner="false"
+                    app:optRoundCardTopEdges="false"
+                    app:optRoundCardBackgroundColor="@color/white"
+                    >
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fillViewport="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_100sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_20sdp"
+                            android:gravity="start"
+                            android:orientation="vertical">
+
+                            <com.tripkipedia.custom.CBTextView
+                                style="@style/txt_voucher_orange_24"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="40% OFF Xtra-Large Combo"
+                                android:textStyle="bold" />
+
+                            <com.tripkipedia.custom.CMTextView
+                                style="@style/txt_dark_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:alpha="0.5"
+                                android:text="Valid from 28 Oct 2019 to 10 Now 2019" />
+
+                            <com.tripkipedia.custom.CMTextView
+                                style="@style/txt_dark_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="@string/order_in_an_xtra_large_combo_consist_of_a_half_half_pizza_choice_of_half_simply_cheese_half_the_big_bbq_or_half_napolitana_chicken_half_romano_margherita_from_pizza_hut_for_just_28_10_u_p_46_90"
+                                android:textStyle="bold" />
+
+                            <com.tripkipedia.custom.CBTextView
+                                style="@style/txt_dark_16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:text="Terms and Conditions"
+                                android:textStyle="bold" />
+
+                            <com.tripkipedia.custom.CMTextView
+                                style="@style/txt_dark_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/you_need_to_have_an_existing_grab_account_with_a_verified_email_address_in_order_to_use_grabfood_n_you_need_to_have_the_latest_grab_app_n_orders_can_only_be_made_with_grabpay_credit_debit_cards_or_grabpay_credits"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </androidx.core.widget.NestedScrollView>
+
+                </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_25sdp"
+                    app:cardElevation="@dimen/_15sdp">
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/freebies_card_image" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+        <com.github.captain_miao.optroundcardview.OptRoundCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:elevation="@dimen/_10sdp"
+            app:optRoundCardLeftBottomCorner="false"
+            app:optRoundCardRightBottomCorner="false"
+            app:optRoundCardTopEdges="false"
+            app:optRoundCardBackgroundColor="@color/white"
+            app:optRoundCardCornerRadius="@dimen/_25sdp"
+            app:optRoundCardElevation="@dimen/_15sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp">
+
+                <com.tripkipedia.custom.CBButtonView
+                    android:id="@+id/btnNext"
+                    style="@style/txt_fff_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@mipmap/btn_next_filled"
+                    android:text="Use Now"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </com.github.captain_miao.optroundcardview.OptRoundCardView>
+    </FrameLayout>
+
+</layout>

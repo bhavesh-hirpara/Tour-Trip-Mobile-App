@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <inset android:drawable="@drawable/map_btn_filled" android:insetLeft="2dp" android:insetRight="2dp" android:insetBottom="2dp" />
+    </item>
+    <item android:state_selected="false">
+        <inset android:drawable="@drawable/tab_background_unselected" android:inset="@dimen/dp3" />
+    </item>
+</selector>

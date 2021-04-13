@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewClickHandler"
+            type="com.tripkipedia.ui.myProfile.passportDetails.myPassport.faceRecognization.viewmodel.FaceRecognizationViewModel.ViewClickHandler" />
+
+        <variable
+            name="viewModel"
+            type="com.tripkipedia.ui.myProfile.passportDetails.myPassport.faceRecognization.viewmodel.FaceRecognizationViewModel" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/topbar"
+            layout="@layout/topbar" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_face_bg_vector" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="@{(v)-> viewClickHandler.onImageClick()}"
+                android:src="@mipmap/face_front" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.tripkipedia.custom.CMTextView
+                android:id="@+id/tvBottom"
+                style="@style/txt_fff_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Look into the screen"
+                android:textStyle="bold" />
+
+            <com.tripkipedia.custom.CMTextView
+                style="@style/txt_purple_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_100sdp"
+                android:text="Cancel"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</layout>

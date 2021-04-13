@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="isLoading"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="viewClickHandler"
+            type="com.tripkipedia.ui.onboarding.viewmodel.OnBoardingViewModel.ViewClickHandler" />
+
+        <variable
+            name="viewModel"
+            type="com.tripkipedia.ui.onboarding.viewmodel.OnBoardingViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screen_bg"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/llBottom"
+            android:layout_marginBottom="-50dp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/mainViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/mainIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp15"
+                android:layout_marginBottom="@dimen/dp10"
+                app:ci_drawable="@drawable/circle_indicator_selected"
+                app:ci_drawable_unselected="@drawable/circle_indicator"
+                app:ci_height="@dimen/_5sdp"
+                app:ci_width="@dimen/_5sdp" />
+
+
+            <com.github.captain_miao.optroundcardview.OptRoundCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:optRoundCardBackgroundColor="@color/white"
+                app:optRoundCardBottomEdges="false"
+                app:optRoundCardCornerRadius="@dimen/_20sdp"
+                app:optRoundCardElevation="@dimen/_20sdp"
+                app:optRoundCardLeftBottomCorner="false"
+                app:optRoundCardRightBottomCorner="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.tripkipedia.custom.CBTextView
+                        style="@style/txt_dark_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_16sdp"
+                        android:text="@string/Loginwith"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:onClick="@{(v)-> viewClickHandler.onLogin_Mobile(v)}"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_mobile" />
+
+                            <com.tripkipedia.custom.CMTextView
+                                style="@style/txt_dark_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mobile" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:onClick="@{(v)-> viewClickHandler.onFaceIdClick(v)}"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:contentDescription="TODO"
+                                android:padding="@dimen/_5sdp"
+                                android:src="@drawable/ic_faceid" />
+
+                            <com.tripkipedia.custom.CMTextView
+                                style="@style/txt_dark_14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/face_id" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|top"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:gravity="center|top"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:contentDescription="TODO"
+                                android:src="@drawable/ic_fb" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_15sdp"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:contentDescription="TODO"
+
+                                android:src="@drawable/ic_google" />
+
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:src="@drawable/ic_wechat" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_toStartOf="@+id/or"
+                            android:background="@color/clr_stroke" />
+
+                        <com.tripkipedia.custom.CTextView
+                            android:id="@+id/or"
+                            style="@style/txt_clr_stroke_16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:text="@string/or" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_toEndOf="@+id/or"
+                            android:background="@color/clr_stroke" />
+                    </RelativeLayout>
+
+                    <com.tripkipedia.custom.CBButtonView
+                        android:id="@+id/btnNext"
+                        style="@style/txt_fff_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:background="@mipmap/btn_next_filled"
+                        android:onClick="@{(v)-> viewClickHandler.onLogin_Mobile(v)}"
+                        android:text="Sign Up"
+                        android:textAllCaps="false" />
+
+                    <com.tripkipedia.custom.CBTextView
+                        style="@style/txt_purple_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:onClick="@{(v)-> viewClickHandler.onGuestClick()}"
+                        android:text="@string/proceed_as_"
+
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </com.github.captain_miao.optroundcardview.OptRoundCardView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

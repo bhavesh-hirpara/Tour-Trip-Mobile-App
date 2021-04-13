@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tripkipedia.custom.CBTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/txt_dark_14"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/_10sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingEnd="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    android:text="@string/app_name" />

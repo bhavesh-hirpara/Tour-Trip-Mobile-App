@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#1494BF</color>
+    <color name="primaryDark">#1494BF</color>
+    <color name="accent">#1494BF</color>
+
+
+    <color name="l_purple">#9A7AFC</color>
+    <color name="purple">#7235FC</color>
+    <color name="status_bar">#1252CB</color>
+    <color name="yellow">#FCDA27</color>
+    <color name="orange">#EB641D</color>
+    <color name="s_bg">#E5E5E5</color>
+    <color name="dark">#161970</color>
+    <color name="dark_light">#8F91BA</color>
+    <color name="edt_hint">#C1C2D9</color>
+    <color name="l_gray">#FBFBFB</color>
+    <color name="green">#56DA6B</color>
+    <color name="voucher_orange">#DA1B3D</color>
+    <color name="clr_stroke">#E7E7E7</color>
+    <color name="txt_clr_stroke">#DADADA</color>
+    <color name="Dialog_bg">#323232</color>
+    <color name="drawer_bg">#3E2A87</color>
+    <color name="tab_bg">#3E2A86</color>
+
+    <color name="sppiner_text">#161970</color>
+    <color name="msg_back">#161970</color>
+
+
+    <color name="transparent">#00ffffff</color>
+    <color name="transparent_">#35ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_dim">#66000000</color>
+    <color name="black_dim_">#99000000</color>
+    <color name="white_dim">#CCffffff</color>
+    <color name="txt_blue">#1DBAEE</color>
+    <color name="txt_dialog_blue">#0968EE</color>
+    <color name="pager_indicator">#002092</color>
+    <color name="txt_country_code">#99A5AA</color>
+    <color name="txt_select_country">#296A70</color>
+    <color name="txt_winapp_number">#707070</color>
+    <color name="txt_privacy_policy">#1DBAEE</color>
+    <color name="txt_clr_black">#424242</color>
+    <color name="txt_clr_hint_black">#838985</color>
+    <color name="edit_background">#f6f6f6</color>
+
+    <color name="text_primary">#4B4B4B</color>
+    <color name="screen_bg">#F5F9FF</color>
+    <color name="blue_layer">#9A7AFC</color>
+    <color name="green_layer">#83DC54</color>
+    <color name="orange_layer">#E9574D</color>
+
+
+    <color name="hint_color">#99ffffff</color>
+
+    <drawable name="seprator">#40000000</drawable>
+
+    <color name="black_translucent">#30000000</color>
+    <color name="black_translucent_">#9E000000</color>
+    <color name="black_translucent__">#00000000</color>
+    <color name="background_tab_pressed">#66414B4D</color>
+    <color name="black_semi_transparent">#FFFFFFFF</color>
+
+
+    <color name="list_devider">#e6e6e6</color>
+    <color name="gray_light">#d0d0d0</color>
+    <color name="white_60">#99FFFFFF</color>
+
+    <color name="gray_light__">#efeff4</color>
+    <color name="black_66">#66000000</color>
+    <color name="black_AA">#AA000000</color>
+    <color name="white_66">#66ffffff</color>
+    <color name="section_line">#AA999999</color>
+    <color name="black_33">#33000000</color>
+    <color name="green_">#329374</color>
+    <color name="msg_bg">#f3f3f3</color>
+    <color name="col_333">#333333</color>
+    <color name="col_666">#666666</color>
+
+
+    <color name="col_f3">#f3f3f3</color>
+    <color name="seek_def">#2b323a</color>
+    <color name="grey_font">#ff9e9e9e</color>
+    <color name="green_avail">#229722</color>
+    <color name="blue_avail">#005baa</color>
+    <color name="disable">#CDCDCD</color>
+
+
+    <color name="select_transparancy">#e2e2e2</color>
+
+    <color name="tab_header">#efefef</color>
+    <color name="green_light">#d6e9e3</color>
+    <color name="blue_light">#d1e5f8</color>
+
+
+    <color name="bg_item_normal_state">#ffffffff</color>
+    <color name="bg_item_dragging_state">#ffffdddd</color>
+    <color name="bg_item_dragging_active_state">#ffff9999</color>
+    <color name="bg_item_swiping_state">#ffffffff</color>
+    <color name="bg_item_swiping_active_state">#fff2f1ef</color>
+
+    <color name="bg_swipe_item_neutral">#ffffffff</color>
+    <color name="bg_swipe_item_left">#ff2f8b2a</color>
+    <color name="bg_swipe_item_right">#fff16e64</color>
+
+
+    <color name="accept">#319373</color>
+    <color name="reject">#9b1d1d</color>
+    <color name="block">#865912</color>
+
+    <color name="bg_msg_from">#FFFFFF</color>
+    <color name="bg_msg_you">#d1e5f8</color>
+    <color name="bg_msg">#ecf0f1</color>
+
+    <color name="dash">#204e81</color>
+    <color name="dash_1">#e57373</color>
+    <color name="dash_2">#f06292</color>
+    <color name="dash_3">#ba68c8</color>
+    <color name="dash_4">#9575cd</color>
+    <color name="dash_5">#7986cb</color>
+    <color name="dash_6">#64b5f6</color>
+    <color name="dash_7">#4fc3f7</color>
+    <color name="dash_8">#4dd0e1</color>
+    <color name="dash_9">#4db6ac</color>
+    <color name="dash_10">#81c784</color>
+    <color name="dash_11">#aed581</color>
+    <color name="dash_12">#ff8a65</color>
+    <color name="dash_13">#d4e157</color>
+    <color name="dash_14">#ffd54f</color>
+    <color name="dash_15">#ffb74d</color>
+    <color name="dash_16">#a1887f</color>
+    <color name="dash_17">#90a4ae</color>
+
+    <color name="bg_tag_noti">#4f94d6</color>
+    <color name="editColor">#333333</color>
+    <color name="noDataClr">#999999</color>
+    <color name="grayClr">#666666</color>
+    <color name="msgClr">#999999</color>
+    <color name="redMandatory">#FF2E2E</color>
+    <color name="pink">#be53b4</color>
+    <color name="divider_gray">#9b9b9b</color>
+    <color name="graylight_">#e2e5ee</color>
+
+    <color name="primary_blue">#00247d</color>
+    <color name="primary_orange">#f25c0b</color>
+    <color name="primary_pink">#ce035c</color>
+    <color name="primary_green">#88c87b</color>
+    <color name="menu_text">#465146</color>
+    <color name="menu_icon">#666666</color>
+
+
+</resources>

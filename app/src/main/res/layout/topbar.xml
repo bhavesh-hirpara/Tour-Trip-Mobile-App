@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="isBackShow"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isThreeDotsShow"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isFavShow"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isShowHome"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isShowShare"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isTextShow"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isMenuShow"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isNotificationShow"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isSearchShow"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isHomeShow"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isShareShow"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="isCenterTextShow"
+            type="java.lang.Boolean" />
+
+        <variable
+            name="topBarClickListener"
+            type="com.tripkipedia.interfaces.TopBarClickListener" />
+
+    </data>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fullscreen_status_bar_height"
+        android:background="@android:color/transparent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:contentInsetStart="@dimen/dp0"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"
+            app:theme="@style/Toolbar">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgMenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|start"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:onClick="@{(v)->topBarClickListener.onTopBarClickListener(v,@string/menu)}"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_menu"
+                        android:visibility="@{isMenuShow? View.VISIBLE : View.GONE, default=gone}" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|start"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:onClick="@{(v)->topBarClickListener.onTopBarClickListener(v,@string/back)}"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_back"
+                        android:visibility="@{isBackShow? View.VISIBLE : View.GONE, default=gone}" />
+
+                    <com.tripkipedia.custom.CBTextView
+                        android:id="@+id/tvTitle"
+                        style="@style/txt_fff_20"
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:gravity="start|center"
+                        android:padding="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:text="askjdhk"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:visibility="@{isTextShow? View.VISIBLE : View.GONE, default=gone}" />
+
+
+                </LinearLayout>
+
+                <com.tripkipedia.custom.CBTextView
+                    android:id="@+id/tvCenterTitle"
+                    style="@style/txt_fff_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:text="askjdhk"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:visibility="@{isCenterTextShow? View.VISIBLE : View.GONE, default=gone}" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgShare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:onClick="@{(v)->topBarClickListener.onTopBarClickListener(v,@string/share)}"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_share"
+                        android:visibility="@{isShareShow? View.VISIBLE : View.GONE, default=gone}" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgHome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{(v)->topBarClickListener.onTopBarClickListener(v,@string/home)}"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_home"
+                        android:visibility="@{isHomeShow? View.VISIBLE : View.GONE, default=gone}" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgNotification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:onClick="@{(v)->topBarClickListener.onTopBarClickListener(v,@string/notifications)}"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@mipmap/notifications"
+                        android:visibility="@{isNotificationShow? View.VISIBLE : View.GONE, default=gone}" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{(v)->topBarClickListener.onTopBarClickListener(v,@string/search)}"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@mipmap/search"
+                        android:visibility="@{isSearchShow? View.VISIBLE : View.GONE, default=gone}" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgThreeDots"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{(v)->topBarClickListener.onTopBarClickListener(v,@string/dots)}"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_three_dots_topbar"
+                        android:visibility="@{isThreeDotsShow? View.VISIBLE : View.GONE, default=gone}" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+</layout>

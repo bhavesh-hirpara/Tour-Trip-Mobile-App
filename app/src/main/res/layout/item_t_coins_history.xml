@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.github.captain_miao.optroundcardview.OptRoundCardView
+        android:id="@+id/cvReward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:optRoundCardBackgroundColor="@color/white"
+        app:optRoundCardCornerRadius="@dimen/_25sdp"
+        app:optRoundCardElevation="@dimen/_10sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <com.tripkipedia.custom.CMTextView
+                    style="@style/txt_dark_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.5"
+                    android:text="30 Oct 2019"
+                    android:textStyle="bold" />
+
+                <com.tripkipedia.custom.CBTextView
+                    android:id="@+id/tvTitle"
+                    style="@style/txt_dark_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Freebie Reward"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.tripkipedia.custom.CBTextView
+                style="@style/txt_green_22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+150"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </com.github.captain_miao.optroundcardview.OptRoundCardView>
+</layout>
